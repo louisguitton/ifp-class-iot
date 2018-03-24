@@ -53,6 +53,9 @@ sh install_librairies.sh
 ```
 if there is a problem at this stage `sudo chown -R pi ~/venv/lib/python3.5/site-packages/`
 
-https://pinout.xyz/
+Modify if needed `electronics.py` with the help of https://pinout.xyz/
+```
+python electronics.py
+```
 
 5. Publish the data using MQTT
