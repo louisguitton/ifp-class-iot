@@ -1,9 +1,8 @@
-# Installation
-1. install raspbian OS on the RPi
+# Step 1: install raspbian OS on the RPi
 ```
 tar -zxvf ...
 ```
-2. operate a raspberry pi
+# Step 2: operate a raspberry pi
 locate IP adress of router
 ```
 ifconfig
@@ -26,12 +25,12 @@ Restart
 shutdown -r now
 ```
 
-3. initial server setup
+# Step 3: initial server setup
 Once raspbian is setup we do the digital ocean initial server setup
 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-debian-8
 
 
-4. Build the circuit with Python and GPIO
+# Step 4: Build the circuit with Python and GPIO
 Follow https://thingsboard.io/docs/samples/raspberry/temperature/
 
 ```
@@ -46,7 +45,7 @@ Modify if needed `electronics.py` with the help of https://pinout.xyz/
 python electronics.py
 ```
 
-5. Publish the data using MQTT
+# Step 5: Publish the data using MQTT
 Understanding the concept of MQTT:
 * first tab `python mqtt_subscriber.py`
 * second tab `python mqtt_publisher.py`
