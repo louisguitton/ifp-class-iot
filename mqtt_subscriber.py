@@ -1,8 +1,7 @@
 import paho.mqtt.client as mqtt
 
-MQTT_SERVER = 'demo.thingsboard.io'
-MQTT_PATH = 'v1/devices/me/telemetry'
-ACCESS_TOKEN = 'cKkt7XsLAlpQJxMsBlte'
+MQTT_SERVER = 'localhost'
+MQTT_PATH = 'test_channel'
 
 
 # The callback for when the client receives a CONNACK response from the server.
@@ -19,7 +18,6 @@ def on_message(client, userdata, msg):
     # more callbacks, etc
 
 client = mqtt.Client()
-client.username_pw_set(ACCESS_TOKEN)
 
 client.on_connect = on_connect
 client.on_message = on_message
