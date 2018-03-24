@@ -17,6 +17,7 @@ humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 14)
 humidity = round(humidity, 2)
 temperature = round(temperature, 2)
 print("Temperature: {}C, Humidity: {}%".format(temperature, humidity))
+sensor_data = {'temperature': 0, 'humidity': 0}
 sensor_data['temperature'] = temperature
 sensor_data['humidity'] = humidity
 
