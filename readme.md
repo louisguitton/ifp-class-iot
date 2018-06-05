@@ -31,6 +31,10 @@ https://www.digitalocean.com/community/tutorials/initial-server-setup-with-debia
 
 
 # Step 4: Build the circuit with Python and GPIO
+* Demo blink the LED
+* Demo read button
+
+* Build the sensor
 Follow https://thingsboard.io/docs/samples/raspberry/temperature/
 
 ```
@@ -47,6 +51,10 @@ python electronics.py
 
 # Step 5: Publish the data using MQTT
 Understanding the concept of MQTT:
+* mosquitto_sub -d -t ifp_mqtt
+* mosquitto_pub -d -t ifp_mqtt -m "Hello IFP"
+
+Demo of posting sensor data to MQTT:
 * first tab `python mqtt_subscriber.py`
 * second tab `python mqtt_publisher.py`
 
